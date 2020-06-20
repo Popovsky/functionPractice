@@ -5,5 +5,5 @@
  * @returns {boolean}
  */
 export default function isRectangle(width, height) {
-    return isNaN(width) || isNaN(height) ? 'NaN' : width > 0 && height > 0;
+    return isNaN(width) || isNaN(height) ? false : width > 0 && height > 0;
 }
