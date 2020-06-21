@@ -1,10 +1,9 @@
-import isRectangle from "../isRectangle";
 /**
  *
  * @param {number} width
  * @param {number} height
- * @returns {number}
+ * @returns {number|string}
  */
 export default function getRectangleArea(width, height) {
-    return isRectangle(width, height) ? width * height : 'Is not a rectangle';
+    return isNaN(width) || isNaN(height) || width <= 0 || height <= 0 ? 'Is not a rectangle' : width * height;
 }
